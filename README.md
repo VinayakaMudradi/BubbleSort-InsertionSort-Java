@@ -1,3 +1,3 @@
-# BubbleSort-InsertionSort-Java
+# BubbleSort-SelectionSort-Java
 
-Implimentation of Bubble sort and Insertion sort in Java.
+Implimentation of Bubble sort and Selection sort in Java.
