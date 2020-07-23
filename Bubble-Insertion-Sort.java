@@ -80,8 +80,9 @@ public class Main
 	        arr[i] = scan.next();
 	    }
 	    System.out.println("New Array Got Populated.!");
-	    selectionSort(arr);
-	    bubbleSort(arr);
+	    // selectionSort(arr);
+	   // bubbleSort(arr);
+	    insertionSort(arr);
 		
 	}
 }
