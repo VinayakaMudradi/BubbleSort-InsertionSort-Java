@@ -6,12 +6,18 @@ import java.util.Scanner;
 public class Main
 {
     public static void insertionSort(String[] arr){
+        boolean stop = true;
         for(int i=1; i<arr.length; i++){
             for(int j=i; j>0; j--){
                 if(arr[j].compareTo(arr[j-1])<0){
+                    stop = false;
                     String temp = arr[j];
                     arr[j] = arr[j-1];
                     arr[j-1] = temp;
+                }
+                if(stop){
+                    stop = true;
+                    break;
                 }
             }
         }
