@@ -29,11 +29,13 @@ public class Main
         }
     }
     public static void bubbleSort(String[] arr){
-        for(int i=0; i<arr.length-1; i++){
-            if(arr[i].compareTo(arr[i+1]) > 0){
-                String temp = arr[i];
-                arr[i] = arr[i+1];
-                arr[i+1] = temp;
+        for(int j=0; j<arr.length; j++){
+            for(int i=0; i<arr.length-1; i++){
+                if(arr[i].compareTo(arr[i+1]) > 0){
+                    String temp = arr[i];
+                    arr[i] = arr[i+1];
+                    arr[i+1] = temp;
+                }
             }
         }
         System.out.println("\n\nArray After Bubble Sort: ");
